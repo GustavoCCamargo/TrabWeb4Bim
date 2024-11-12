@@ -4,21 +4,22 @@ body {
     background-color: #f4f4f4;
     margin: 0;
     padding: 0;
+    background-color: #E1F0DA !important;
 }
 
 .todo-container {
     width: 80%;
     max-width: 800px;
     margin: 0 auto;
-    background-color: #fff;
+    background-color: #D4E7C5 !important;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: #99BC85;
 }
 
 header {
     display: flex;
-    align-items: center;
+    align-items: top;
     margin-bottom: 20px;
 }
 
@@ -55,7 +56,7 @@ select {
 
 button {
     padding: 10px 20px;
-    background-color: #28a745;
+    background-color: #99BC85;
     color: #fff;
     border: none;
     border-radius: 4px;
@@ -63,7 +64,7 @@ button {
 }
 
 button:hover {
-    background-color: #218838;
+    background-color: #0aefff;
 }
 
 table {
@@ -169,7 +170,7 @@ select {
 
 button {
     padding: 10px 20px;
-    background-color: #28a745;
+    background-color: #99BC85;
     color: #fff;
     border: none;
     border-radius: 4px;
@@ -201,7 +202,7 @@ td {
 }
 
 button.remove-task, button.edit-task, button.complete-task, button.cancel-task {
-    background-color: #007bff;
+    background-color: #218838;
     color: white;
     border: none;
     padding: 5px 10px;
@@ -210,7 +211,7 @@ button.remove-task, button.edit-task, button.complete-task, button.cancel-task {
 }
 
 button.remove-task:hover, button.edit-task:hover, button.complete-task:hover, button.cancel-task:hover {
-    background-color: #0056b3;
+    background-color: #218838;
 }
 
 footer {
@@ -219,7 +220,7 @@ footer {
 }
 
 footer a {
-    color: #007bff;
+    color: #218838;
     text-decoration: none;
 }
 
