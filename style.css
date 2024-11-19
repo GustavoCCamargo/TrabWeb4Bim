@@ -5,6 +5,9 @@ body {
     margin: 0;
     padding: 0;
     background-color: #E1F0DA !important;
+    height: 100vh;
+    display: flex;
+    align-items: center;
 }
 
 .todo-container {
@@ -210,7 +213,7 @@ button.remove-task, button.edit-task, button.complete-task, button.cancel-task {
     cursor: pointer;
 }
 
-button.remove-task:hover, button.edit-task:hover, button.complete-task:hover, button.cancel-task:hover {
+button.remove-task:hover, button.edit-task:hover, button.complete-task:hover, button.cancel-task:hover, button.concluirbtn{
     background-color: #218838;
 }
 
@@ -227,3 +230,4 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+
