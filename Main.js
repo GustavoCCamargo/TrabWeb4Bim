@@ -15,13 +15,40 @@ function addTask() {
 
     if (taskText !== "") {
         // Cria uma nova linha da tabela
-        const tr = document.createElement('tr');
+        const tr = document.createElement('tr');    
         tr.innerHTML = `
             <td>${taskText}</td>
             <td><strong>${status}</strong></td>
             <td>
                 <button class="edit-task">Editar</button>
-                <button class="complete-task">Concluir</button>
+
+                
+                <!-- Button trigger modal -->
+                <button id="concluirbtn" type="button"  data-bs-toggle="modal" data-bs-target="#concluirModal ">
+                    Concluir
+                </button>
+        
+                <!-- Modal -->
+                <div class="modal fade" id="concluirModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Atenção</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                Tem certeza que quer concluir a tarefa?
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                                <button type="button" class="complete-task">Concluir</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
                 <button class="cancel-task">Cancelar</button>
                 <button class="remove-task">Remover</button>
             </td>
@@ -31,6 +58,7 @@ function addTask() {
         const editButton = tr.querySelector('.edit-task');
         const cancelButton = tr.querySelector('.cancel-task');
         const completeButton = tr.querySelector('.complete-task');
+        
         const removeButton = tr.querySelector('.remove-task');
 
         // Função para remover a tarefa
@@ -55,7 +83,7 @@ function addTask() {
         // Função para concluir a tarefa
         completeButton.onclick = function() {
             tr.style.textDecoration = "line-through";
-            alert("Tarefa concluída");
+            console.log("fazido")
         };
 
         // Adiciona a nova tarefa à tabela
