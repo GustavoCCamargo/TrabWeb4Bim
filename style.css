@@ -116,3 +116,13 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+
+#task-status {
+    width: 200px; /* Largura do select */
+    padding: 5px;
+    border: 1px solid #99BC85;
+    border-radius: 5px;
+}
+
+
+
