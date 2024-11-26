@@ -42,7 +42,7 @@ function addTask() {
             taskList.removeChild(tr);
         };
 
-        // Concluir tarefa
+        // Completa tarefa
         completarBtn.onclick = function() {
             tr.style.textDecoration = "line-through";
         };
